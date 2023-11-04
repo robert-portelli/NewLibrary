@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "newlibrary"
+version = "0.1.0"
+description = "An experiment"
+authors= ["Geir Arne Hjelle <geirarne@realpython.com>"]
+maintainers = ["Robert Portelli <github@robertportelli.com>"]
+readme = "README.md"
+packages = [{include = "newlibrary", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "1.25.2"
+pre-commit = "^3.5.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.3"
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
